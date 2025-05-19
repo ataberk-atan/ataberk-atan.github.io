@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ataberk Atan | PhD Student</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Ataberk Atan</h1>
+      <p>Research Associate and incoming PhD Student at the Chair of Public Economics, <a href="https://tu-dresden.de/bu/wirtschaft/vwl/fiwi" target="_blank" rel="noopener noreferrer">TU Dresden</a></p>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#cv">CV</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>I am a PhD student in Economics at TU Dresden, focusing on applied microeconomics, political economy, and development economics. My work combines causal inference, microeconomic theory, and data science tools.</p>
+    </section>
+
+    <section id="research">
+      <h2>Research</h2>
+      <p>Coming soon. Links to working papers and publications will appear here.</p>
+    </section>
+
+    <section id="teaching">
+        <h2>Teaching</h2>
+        <ul>
+          <li>
+            <b>Public Choice (Ökonomische Theorie der Politik)</b>, tutorial, undergraduate, TU Dresden, ST2025
+          </li>
+        </ul>
+    </section>
+       
+
+    <section id="cv">
+      <h2>CV</h2>
+      <p><a href="cv.pdf" target="_blank">Download my CV (PDF)</a></p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>
+            <a id="email-link" href="#" style="text-decoration:none; color:inherit;" aria-label="Send email">
+              &#9993; <!-- Envelope icon -->
+              <span id="email-text"></span>
+            </a>
+        </p>
+          
+        <script>
+            const user = "ataberk.atan";
+            const domain = "tu-dresden.de";
+            const email = user + "@" + domain;
+          
+            const encodedEmail = user + "&#64;" + domain;
+          
+            const emailLink = document.getElementById("email-link");
+            const emailText = document.getElementById("email-text");
+          
+            emailLink.href = "mailto:" + email;
+            emailLink.setAttribute("aria-label", "Send email to " + email);
+          
+            emailText.innerHTML = encodedEmail;
+        </script>
+          
+          <p style="text-align: center;">
+            <a href="https://github.com/ataberk-atan" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg" alt="GitHub" style="width:24px; height:24px; vertical-align:middle;" />
+            </a>
+            &nbsp;
+            <a href="https://www.linkedin.com/in/ata0/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg" alt="LinkedIn" style="width:24px; height:24px; vertical-align:middle;" />
+            </a>
+          </p>
+          
+    </section>
+      
+
+    <footer>
+      <p>&copy; 2025 Ataberk Atan</p>
+    </footer>
+  </div>
+</body>
+</html>
