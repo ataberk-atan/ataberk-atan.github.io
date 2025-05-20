@@ -1,2 +1,2 @@
 # ataberk-atan.github.io
-home to my personal website
+Here is where I keep my personal website.
