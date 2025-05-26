@@ -53,43 +53,45 @@
     </section>
 
     <section id="contact">
-        <h2>Contact</h2>
-        <p>
-            <a id="email-link" href="#" style="text-decoration:none; color:inherit;" aria-label="Send email">
-              &#9993; <!-- Envelope icon -->
-              <span id="email-text"></span>
-            </a>
+      <h2>Contact</h2>
+      <p>
+          <a id="email-link" href="#" style="text-decoration:none; color:inherit;" aria-label="Send email">
+            &#9993; <!-- Envelope icon -->
+            <span id="email-text"></span>
+          </a>
+      </p>
+        
+      <script>
+          const user = "ataberk.atan";
+          const domain = "tu-dresden.de";
+          const email = user + "@" + domain;
+        
+          const encodedEmail = user + "&#64;" + domain;
+        
+          const emailLink = document.getElementById("email-link");
+          const emailText = document.getElementById("email-text");
+        
+          emailLink.href = "mailto:" + email;
+          emailLink.setAttribute("aria-label", "Send email to " + email);
+        
+          emailText.innerHTML = encodedEmail;
+      </script>
+        
+      <p style="text-align: center;">
+        <a href="https://github.com/ataberk-atan" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg" alt="GitHub" style="width:24px; height:24px; vertical-align:middle;" />
+        </a>
+        &nbsp;
+        <a href="https://www.linkedin.com/in/ata0/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg" alt="LinkedIn" style="width:24px; height:24px; vertical-align:middle;" />
+        </a>
+        <!--
+        &nbsp;
+        <a href="https://bsky.app/profile/ataberkatan.bsky.social" target="_blank" rel="noopener noreferrer" aria-label="BlueSKy">
+          <img src="https://simpleicons.org/icons/bluesky.svg" alt="BlueSky" style="width:24px; height:24px; vertical-align:middle;" />
+        </a>
+        -->
         </p>
-          
-        <script>
-            const user = "ataberk.atan";
-            const domain = "tu-dresden.de";
-            const email = user + "@" + domain;
-          
-            const encodedEmail = user + "&#64;" + domain;
-          
-            const emailLink = document.getElementById("email-link");
-            const emailText = document.getElementById("email-text");
-          
-            emailLink.href = "mailto:" + email;
-            emailLink.setAttribute("aria-label", "Send email to " + email);
-          
-            emailText.innerHTML = encodedEmail;
-        </script>
-          
-          <p style="text-align: center;">
-            <a href="https://github.com/ataberk-atan" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-              <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg" alt="GitHub" style="width:24px; height:24px; vertical-align:middle;" />
-            </a>
-            &nbsp;
-            <a href="https://www.linkedin.com/in/ata0/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-              <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg" alt="LinkedIn" style="width:24px; height:24px; vertical-align:middle;" />
-            </a>
-            &nbsp;
-            <a href="https://bsky.app/profile/ataberkatan.bsky.social" target="_blank" rel="noopener noreferrer" aria-label="BlueSKy">
-              <img src="https://simpleicons.org/icons/bluesky.svg" alt="BlueSky" style="width:24px; height:24px; vertical-align:middle;" />
-            </a>
-          </p>
     </section>
 
     <footer>
