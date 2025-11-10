@@ -1,8 +1,8 @@
 body {
-  font-family: "Courier New", Courier, monospace;
+  font-family: system-ui, sans-serif;
   line-height: 1.6;
-  background: #000000;  /* black background */
-  color: #39FF14;       /* soft neon green */
+  background: #fdfdfd;
+  color: #222;
   margin: 0;
   padding: 0;
 }
